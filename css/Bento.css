@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--Purple-500);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(256, 86%, 54%);
+}
+:root {
+  --Purple-100: hsl(254, 88%, 90%);
+  --Purple-500: hsl(256, 67%, 59%);
+  --Yellow-100: hsl(31, 66%, 93%);
+  --Yellow-500: hsl(39, 100%, 71%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 7%);
+}
+body {
+  background-color: wheat;
+}
+.grid-container {
+  padding: 20px 15px;
+}
+@media (min-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 10px;
+  }
+  .post {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+  .social {
+    grid-area: 1 / 2 / 1 / span 3;
+  }
+  .schedule {
+    grid-area: 1 / 5 / span 2 / span 1;
+  }
+  .write-ai {
+    grid-area: 2 / 1 / span 2 / span 1;
+  }
+  .mange {
+    grid-area: 2 / 2 / span 1 / span 3;
+  }
+  .maintain {
+    grid-area: 3 / 3 / span 1 / span 1;
+  }
+  .grows {
+    grid-area: 3 / 2 / 4 / span 1;
+  }
+  .followers {
+    grid-area: 3 / 4 / span 1 / span 2;
+  }
+}
+.box {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgb(163, 163, 163);
+  margin: 10px auto;
+}
+.social {
+  background-color: var(--Purple-500);
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.social h1 {
+  font-weight: 400;
+  width: 200px;
+  margin: 10px auto;
+}
+.social img {
+  width: 200px;
+}
+.social h1 span {
+  color: var(--Yellow-500);
+}
+.mange {
+  background-color: var(--White);
+}
+.mange img {
+  width: 300px;
+}
+
+.schedule {
+  background-color: var(--Purple-100);
+  text-align: center;
+}
+.schedule h2 {
+  font-weight: 400;
+}
+.schedule img {
+  margin: 20px auto;
+  width: 200px;
+}
+.followers {
+  background-color: var(--Purple-500);
+  color: white;
+  text-align: center;
+}
+
+.followers img {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.followers h3 {
+  font-weight: 400;
+}
+
+.grows {
+  background-color: white;
+}
+.grows p {
+  margin: 10px 0px;
+}
+.grows img {
+  width: 100%;
+}
+.post {
+  background-color: var(--Purple-100);
+}
+.post h2 {
+  font-weight: 400;
+}
+.post h2 span {
+  color: var(--Purple-500);
+}
+.post img {
+  width: 100px;
+  margin-top: 20px;
+}
+.write-ai {
+  background-color: var(--Yellow-500);
+}
+.write-ai h2 {
+  font-weight: 400;
+}
+.write-ai img {
+  width: 200px;
+  margin-top: 20px;
+}
+.maintain {
+  background-color: var(--Yellow-500);
+}
+.maintain img {
+  width: 100px;
+}
